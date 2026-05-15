@@ -4,23 +4,95 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Meu Site</title>
-
 <style>
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
-body{
-    background:#0d0d0d;
-    font-family:Arial, sans-serif;
-    color:white;
+/* BANNER FIXO */
+.top-banner{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
-
+.top-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* EMPURRAR CONTEÚDO PRA BAIXO */
+body {
+  margin: 10;
+  padding-top: 65px; /* ajusta conforme altura do banner */
+}
+.post-date,
+.date-header,
+.timestamp,
+.blog-date-header {
+  display: none !important;
+}
+  .to{
+    opacity: 1;
+    transform:translateY(0);
+  }
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('https://i.pinimg.com/736x/5d/49/05/5d490537fb1d96a6e5666d2fa630703d.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.app-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #000000;
+  display: flex;
+  justify-content: space-around;
+  padding: 1px 0;
+  box-shadow: -1 0px 0px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+.app-menu a {
+  text-decoration: none;
+  color: #0000;
+  font-size: -0px;
+  text-align: center;
+  flex: 1;
+}
+.box {
+  background: #000000;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.icon-img {
+  width: 50px;
+  height: 50px;
+}
+.app-menu a:active .box {
+  transform: scale(0.9);
+}
+.app-menu .active .box {
+  background: #000000;
+}
+.app-menu .active span {
+  color: #ff3b3b;
+}
+.box:hover {
+  transform: translateY(-0px);
+}
+    
 /* TOPO */
-
 header{
     background:#111;
     padding:20px;
@@ -138,9 +210,12 @@ footer{
     <h1>MEU SITE</h1>
     <p>Site criado para GitHub Pages</p>
 </header>
-
 <section class="banner">
-    <h2>BEM-VINDO</h2>
+<h2>BEM-VINDO</h2>
+</div>
+<div class='top-banner'>
+  <img src='https://i.ibb.co/1tNpWbX6/unnamed.png'/>
+</div>
 </section>
 
 <section class="container">
@@ -177,6 +252,43 @@ footer{
 <footer>
     © 2026 - Meu Site
 </footer>
+<b:template-script async='true' name='indie' version='1.0.0'/>
+  <div class='app-menu'>
 
+  <a class='item active' href='https://ppsspponline8v.blogspot.com/p/inicial.html'>
+    <div class='box'>
+      <img class='icon-img' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeO2vGbZq-Ti5_r2L5_cvLLAH2r-tdIhOqhfcUYNNnnk5aJFUImrenX9dHWz7NC7zBzJP0rN52RZh07QhwKjBjed9VxYrXfiEp6BtbkZM69Slp6VPyMP2cemAV8eNVTiRXLWBJMK4Dxogzz9dWuO8hwQO1C2WIz4H8X2Jg_kqj_i1DrMDwqAnAjs7tOmo/s320/INICIO.jpg'/>
+    </div>
+    <span>INÍCIO</span>
+  </a>
+
+  <a class='item' href='https://rodrigo96br.github.io/PPSSPPONLINE/COPA'>
+    <div class='box'>
+      <img class='icon-img' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiowghmzBA31RR3bR9gSxg3CO9pv1AtbOjjYpwchFdbjZXWqb6WvbbXS2KxrFG-Wfws4TYHjOEbxF70x6tuvHinQmotFoYR1nyITTFsLvbpbxuiU6mqSll76u-c2Xb3u-A7tcGoLFigFIePvee3JhNHc580_HEfEUY1OtKZKYwoHCGZf9-MRE-LQVPudBw/s320/CAMPEONATO.jpg'/>
+    </div>
+    <span>COPA</span>
+  </a>
+
+  <a class='item' href='https://ppsspponline8v.blogspot.com/p/ranking.html'>
+    <div class='box'>
+      <img class='icon-img' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTEnuETIvr4VfVIjUZCMVR6vN6z50mBJfCJY2A0puZ-iDBAAgK-VyxZHPjzRb5Ui6TkidtBlNnq6ssahJMF1JHJDERazlHfkjCcFyxsQWanQEYtI6_MvZKq7zUYhBfPozD7RHeje0KZgBXYWCvFVpSPR8DNjAZmSMVWxYh7WkKpsyL4jmSsK2Qkb7UibU/s320/RANKING.jpg'/>
+    </div>
+    <span>RANKING</span>
+  </a>
+
+  <a class='item' href='https://ppsspponline8v.blogspot.com/p/tutorial.html'>
+    <div class='box'>
+      <img class='icon-img' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhr8ov1ejUWmYsuoGTv4OBfp0HqUecHZpUHqSXZn9-gwGsdSMXbu9FriGKTW9OfdRjqhbN8oB3rdzl_S5FNYyUtajcc3gAnLP5J7taNXdgXZZCFmQg9BNZNd9uIUcM5RdJqg6NR2G_T-4vtopi1R9MByKCMdCfuhG7Rh3KyUP0zxQerCtdcn0mgH8TESbs/s320/TUTORIAL.jpg'/>
+    </div>
+    <span>TUTORIAL</span>
+  </a>
+
+  <a class='item' href='https://ppsspponline8v.blogspot.com/p/grupo.html'>
+    <div class='box'>
+      <img class='icon-img' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhW4HN0PSNDtE5Xgdr6zHiAFB0FUSC5dcSJmFi84v6XkK870Q74ghb6fKBMHU9dtTTtV-HlfS_-VmgA2mLv58i3eWXxYfgcpVK9EEjpLk6YmX3IoJPaM8aA8-mg9rNK8z5xgXuL-059f63qW640dN4HJLH6F30CF5VPY-03Q7MO2u_N3N-Yv5SEA_aKgbE/s320/GRUPO.jpg'/>
+    </div>
+    <span>GRUPO</span>
+  </a>
+</div>
 </body>
 </html>
