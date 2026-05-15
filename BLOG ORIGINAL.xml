@@ -1,89 +1,404 @@
-﻿<style>
-.slider {
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;
-  border-radius: 20px;
+<meta charset="UTF-8"></meta>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"></meta>
+<title></title>
+<style>
+*{
+    margin:0;
+    padding:20;
+    box-sizing:border-box;
+}
+body{
+    opacity:1;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-x:auto;
+    background-image: url('https://i.pinimg.com/1200x/51/fc/a0/51fca09b9d25e25e1f08c7bcf6c05421.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-attachment: fixed; /* Opcional: fixa a imagem ao rolar */
+    background-position: center;
+    color:#fff;
+}      
+/* TOPO */
+.titulo{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    color:#fff;
+    text-shadow:0 0 15px gold;
+}
+.texto-final{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    color:#fff;
+    text-shadow:0 0 10px gold;
+    position:relative;
+    top:175px;
+}
+  .trofeu{
+    position: absolute;
+    top:95px;
+    left:175px;
+    transform:translateX(-50%);
+    font-size:10px;
+    animation:flutuar 2s infinite ease-in-out;
+}
+  .trofeu img{
+    width:60px;
+    height:90px;
+    object-fit:contain;
 }
 
-.slides {
-  display: flex;
-  transition: transform 0.5s ease;
+@keyframes flutuar{
+    0%{transform:translateX(-50%) translateY(0px);}
+    50%{transform:translateX(-50%) translateY(-10px);}
+    100%{transform:translateX(-50%) translateY(0px);}
 }
-
-.slide {
-  min-width: 100%;
+/* ////////// CAIXA 1 ////////// */
+.caixa-1{
+    width:40px;
+    height:120px;
+    opacity:1;
+    border:2px solid #fff;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 12px #ffffff55;
 }
-
-.slide img {
-  width: 100%;
-  border-radius: 20px;
-  height: 200px;
-  object-fit: cover;
+.time-1 img{
+    width:30px;
+    height:48px;
+    object-fit:contain;
 }
-
-/* Botões */
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: #ffff;
-  border: none;
-  font-size: 25px;
-  padding: 10px;
-  cursor: pointer;
+.vs-1{
+    font-size:18px;
+    font-weight:bold;
 }
-
-.prev { left: 10px; }
-.next { right: 10px; }
+/* ////////// CAIXA 2 ////////// */
+.caixa-2{
+    width:45px;
+    height:139px;
+    opacity:1;
+    border:2px solid #fff;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 12px #ffffff55;
+    position:absolute;;
+    top:465px;
+    left:1px;
+}
+  .time-2 img{
+    width:35px;
+    height:55px;
+    object-fit:contain;
+}
+  .vs-2{
+    font-size:18px;
+    font-weight:bold;
+    position:relative;
+}
+/* ////////// CAIXA FINAL ////////// */
+   .caixa-final{
+    width:60px;
+    height:160px;
+    opacity:1;
+    border:4px solid gold;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 12px #ffffff55;
+    position: absolute;
+    top:450px;
+    left:55px;
+    box-shadow:0 0 10px gold;
+    animation:brilho 2s infinite alternate;
+}
+  .final img{
+    width:35px;
+    height:55px;
+    object-fit:contain;
+}
+    .vs-final{
+    font-size:30px;
+    font-weight:bold;
+    position:relative;
+    top:1px;
+}
+/* ////////// POSIÇÃO ////////// */
+  .posição-1{
+    position:relative;
+    top:2px;
+}
+   .posição-2{
+    position: absolute;
+    top:-334px;
+    left:46px;
+}
+.posição-3{
+    position: absolute;
+    top:-3px;
+    left:123px;
+}
+.posição-4{
+    position: absolute;
+    top:-130px;
+    left:50px;
+}
+  .posição-5{
+    position: absolute;
+    top:-64px;
+    left:46px;
+}
+@keyframes brilho{
+    from{
+        box-shadow:0 0 10px gold;
+    }
+    to{
+        box-shadow:0 0 35px gold;
+}
 </style>
+</head>
+<body>
+<div class="titulo">
+<div class="texto-final">
+FINAL
+</div>
+<!------------------------------------ LADO DIREITO --------------------------------------------->
+<div class="trofeu"><img src="https://i.ibb.co/PzvfgXsb/Trof-u-ouro.png" /></div>
+  
+<!------------------------------- LADO DIREITO TIME-------------------------------------->
 
-<div class="slider">
-  <div class="slides" id="slides">
+</div>
+<div class="caixa-1">
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
 
-    <div class="slide">
-      <a href="LINK-DO-POST-1">
-        <img src="https://i.ytimg.com/vi/PDoAYvjawhQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&amp;rs=AOn4CLBuT32CDjUpDh9yaxM51NRQ7v6r0Q" />
-      </a>
-    </div>
+<div class="vs-1">VS</div>
 
-    <div class="slide">
-      <a href="LINK-DO-POST-2">
-        <img src="https://cdn.awsli.com.br/800x800/1385/1385452/produto/256469963/16956-need-for-speed-most-wanted-5-1-0-psp-capa-1-7qwolis2kh.jpeg" />
-      </a>
-    </div>
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+<!----------------------------------------------------------------------------------------------->
 
-    <div class="slide">
-      <a href="LINK-DO-POST-3">
-        <img src="https://i.ytimg.com/vi/3u64vbSiwI4/maxresdefault.jpg" />
-      </a>
-    </div>
+<!------------------------------- LADO DIREITO TIME-------------------------------------->
+</div>
+<div class="posição-1">
+<div class="caixa-1">
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
 
-  </div>
+<div class="vs-1">VS</div>
 
-  <button class="prev" onclick="mudarSlide(-1)">❮</button>
-  <button class="next" onclick="mudarSlide(1)">❯</button></div>
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+<!----------------------------------------------------------------------------------------------->
+  
 
-<b><script>
-let index = 0;
+<!------------------------------- LADO DIREITO TIME-------------------------------------->
+</div>
+<br/><br/>
+<div class="caixa-1">
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
 
-function mudarSlide(direcao){
-  const slides = document.getElementById("slides");
-  const total = slides.children.length;
+<div class="vs-1">VS</div>
 
-  index += direcao;
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+<!----------------------------------------------------------------------------------------------->
+ 
 
-  if(index < 0) index = total - 1;
-  if(index >= total) index = 0;
+<!------------------------------- LADO DIREITO TIME-------------------------------------->
+</div>
+<div class="posição-1">
+<div class="caixa-1">
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
 
-  slides.style.transform = "translateX(" + (-index * 100) + "%)";
-}
+<div class="vs-1">VS</div>
 
-// automático
-setInterval(() => {
-  mudarSlide(1);
-}, 3000);
-</script>
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+<!----------------------------------------------------------------------------------------------->
+  
+  
+  
+ 
 
-</b><div class="galeria"><b><br /></b></div><div class="galeria"><b>JOGOS DISPONÍVEL PARA BAIXAR</b></div><div class="galeria"><span face="Arial, sans-serif" style="font-size: 11pt; font-variant-east-asian: normal; font-variant-numeric: normal; text-align: center; vertical-align: baseline; white-space: pre-wrap;"><span style="border: none; display: inline-block; height: 144px; overflow: hidden; width: 87px;"><img height="144" src="https://blogger.googleusercontent.com/img/a/AVvXsEiWtzGLY4nuPfmBMJJxa6NbeDtPeqQF6k_YvqQpywDIF5Kbvhpp9bwz6vuQE1-o21bb6mI76ZWbKWZlHMT4mdY31iG_OzI7fS_ALQs4JNwhibzcD4O4FPp_XNp5pDvsEVBn4WsN-kpv6YPNoX2GjYLkfihiRl8MJDKbE7HSRIHzFcRJ6YKT8FdI6JWuhcg" style="margin-left: 0px; margin-top: 0px;" width="87" /></span></span><span face="Arial, sans-serif" style="font-size: 11pt; font-variant-east-asian: normal; font-variant-numeric: normal; text-align: center; vertical-align: baseline; white-space: pre-wrap;"><span style="border: none; display: inline-block; height: 144px; overflow: hidden; width: 87px;"><a href="https://cur.to/tudx"><img height="144" src="https://blogger.googleusercontent.com/img/a/AVvXsEjH3MUnmAC1Mn2sbthPF6AhsDMjrs-XBY-GfeBgAhjo3b18hit063qP1Uh7WLT51Wr-86y3zT4w1hEout7Tz9mGerEOUTgJ_5P1wJD7TNBEJCcX9fI6rX_l-jJUvu5hsLU0GPg9jLBdJa4q1vKm_OMHqv57vvz-6M_Y1y7T1PgQd3V_MMevcw1sOykvn6g" style="margin-left: 0px; margin-top: 0px;" width="87" /></a></span></span><span face="Arial, sans-serif" style="font-size: 11pt; font-variant-east-asian: normal; font-variant-numeric: normal; text-align: center; vertical-align: baseline; white-space: pre-wrap;"><span style="border: none; display: inline-block; height: 144px; overflow: hidden; width: 87px;"><img height="144" src="https://blogger.googleusercontent.com/img/a/AVvXsEiZno9wx9XWUL7_mxRtTzd8YG3e-mzEThrbBi-jmpmBK-DFvz5zDjJmoFc1YWe1dRpBl67AOd07VvKWz5-cpxSw-xUYwS62bTOGxoYBGxvPzIthaXjfG5uOCzBh2FRNaEjdeeGGsRAoKyCMOGfqxamJ1elVx7yTpYyWfTlAoMI_henLw8b7vCDJ31RnhjU" style="margin-left: 0px; margin-top: 0px;" width="87" /></span></span><span face="Arial, sans-serif" style="font-size: 11pt; font-variant-east-asian: normal; font-variant-numeric: normal; text-align: center; vertical-align: baseline; white-space: pre-wrap;"><span style="border: none; display: inline-block; height: 144px; overflow: hidden; width: 87px;"><img height="144" src="https://blogger.googleusercontent.com/img/a/AVvXsEh_tyxyPKoLbSfoA8ksOTkcpLsT1T3g7EcAfweXJuDDAz_8Ifa-6ByWNbCJaTavuh_SuHA6LmFaXG7XC6GRS9GN7DbhJH4y8cxSztlh_lyQ6ZEv-8Mr99R8kr22cXROuIzc_LtfMu9sdYSxhXOFN_fNtNK0f8VdEkcHYpYK8KS5oyp6-bhyZXjHmSxGJn8" style="margin-left: 0px; margin-top: 0px;" width="87" /></span></span></div><div class="separator" style="clear: both; text-align: center;"><h3><span id="docs-internal-guid-6d444c37-7fff-382c-bb34-df5e367ea4fc" style="font-weight: normal;"><div class="separator" style="clear: both; text-align: center;"><div class="separator" style="clear: both; text-align: center;"><div class="separator" style="clear: both; font-size: medium;"><div class="separator" style="clear: both; text-align: center;"><img alt="" data-original-height="768" data-original-width="1366" height="180" src="https://blogger.googleusercontent.com/img/a/AVvXsEhX3THRPocvhngEbRGxIA64G5cpRxqc3bx2wh95JU6fegsHeaoP7Ja4jsAxE0iPqEgnkG7IrsquNDIjDBx8TQXY3-EYxmes0bgu0VQjUPUDmLKd9x4H1t0MoOKi-vxzdflv06gPvKNR_88j0sDNq7OUqRWMnG0twFwELIY7zWbe9tQofTmULPhowDOELbY=w339-h180" width="339" /></div>PES2014 CAMERA DE PS5</div><div class="separator" style="clear: both; font-size: medium;"><object class="BLOG_video_class" contentid="a9826ed5480af9be" height="232" id="BLOG_video-a9826ed5480af9be" width="344"></object></div></div></div><div class="separator" style="clear: both; text-align: center;"><b><object class="BLOG_video_class" contentid="1325c0d79ba08818" height="245" id="BLOG_video-1325c0d79ba08818" width="348"></object></b></div></span></h3></div>
+  
+<!-------------------------------- QUARTA DE FINAL-------------------------------------->
+</div>
+<div class="posição-2">
+<div class="caixa-1">
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+
+<div class="vs-1">VS</div>
+
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+<!-------------------------------- QUARTA DE FINAL-------------------------------------->
+
+
+  
+<!----------------------------------------------------------------------------------------------->
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<div class="caixa-1">
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+
+<div class="vs-1">VS</div>
+
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+<!----------------------------------------------------------------------------------------------->
+  
+  
+  
+ 
+
+  
+<!-------------------------------- QUARTA DE FINAL -------------------------------------->
+
+<!----------------------------------------------------------------------------------------------->
+</div>
+<div class="posição-2">
+<div class="caixa-2">
+<div class="time-2">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+
+<div class="vs-2">VS</div>
+
+<div class="time-2">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+<!--------------------------------------- FINAL-------------------------------------------------->
+</div>
+<div class="caixa-final">
+<div class="final">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+
+<div class="vs-final">VS</div>
+
+<div class="final">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+<!----------------------------------------------------------------------------------------------->
+  
+
+<!----------------------------------------------------------------------------------------------->
+</div>
+<div class="posição-3">
+<div class="caixa-2">
+<div class="time-2">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+
+<div class="vs-2">VS</div>
+
+<div class="time-2">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+
+</div>
+<div class="posição-4">
+<div class="caixa-1">
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+
+<div class="vs-1">VS</div>
+
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+<!-------------------------------- QUARTA DE FINAL ----------------------->
+
+
+<!-------------------------------------------------------------------------------->
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<div class="caixa-1">
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+
+<div class="vs-1">VS</div>
+
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+<!-------------------------------------------------------------------------------->
+  
+</div>
+<div class="posição-5">
+<div class="caixa-1">
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+
+<div class="vs-1">VS</div>
+
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+<!----------------------------------------------------------------------------------------------->
+</div>
+<div class="posição-1">
+<div class="caixa-1">
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+
+<div class="vs-1">VS</div>
+
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+<!------------------------------- LADO DIREITO TIME-------------------------------------->
+</div>
+<br/><br/>
+<div class="caixa-1">
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+
+<div class="vs-1">VS</div>
+
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+<!----------------------------------------------------------------------------------------------->
+  
+
+<!------------------------------- LADO DIREITO TIME-------------------------------------->
+</div>
+<div class="posição-1">
+<div class="caixa-1">
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+
+<div class="vs-1">VS</div>
+
+<div class="time-1">
+<img src="https://i.ibb.co/yBPZSKL3/IMG-20260427-170536.png" />
+</div>
+<!----------------------------------------------------------------------------------------------->
+</div>
+
+</div>
+
+</body>
+</html>
