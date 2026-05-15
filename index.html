@@ -4,15 +4,39 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Meu Site</title>
-
 <style>
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
+/* BANNER FIXO */
+.top-banner{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.top-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* EMPURRAR CONTEÚDO PRA BAIXO */
+body {
+  margin: 10;
+  padding-top: 65px; /* ajusta conforme altura do banner */
+}
+.post-date,
+.date-header,
+.timestamp,
+.blog-date-header {
+  display: none !important;
+}
+  .to{
+    opacity: 1;
+    transform:translateY(0);
+  }
 body{
   margin: 0;
   padding: 0;
