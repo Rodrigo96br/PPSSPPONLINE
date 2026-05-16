@@ -12,13 +12,14 @@
 }
 body {
   margin: 10;
-  padding-top: 65px; /* ajusta conforme altura do banner */
-  background-image:            url('https://i.pinimg.com/736x/5d/49/05/5d490537fb1d96a6e5666d2fa630703d.jpg');
+  padding-top: 110px;
+  background-image: url('https://i.pinimg.com/736x/5d/49/05/5d490537fb1d96a6e5666d2fa630703d.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+/* BANNER FIXO */
 .top-banner{
   position: fixed;
   top: 0;
@@ -28,18 +29,18 @@ body {
 .top-banner img {
   width: 100%;
   height: auto;
-  display: block;
-}
+  display: block;}
+
 .post-date,
 .date-header,
 .timestamp,
 .blog-date-header {
-  display: none !important;
-}
+  display: none !important;}
+
   .to{
     opacity: 1;
     transform:translateY(0);
-  }
+}
 .app-menu {
   position: fixed;
   bottom: 0;
@@ -78,18 +79,21 @@ body {
 }
 .app-menu .active .box {
   background: #000000;
-
+}
+.app-menu .active span {
+  color: #ff3b3b;
 }
 .box:hover {
   transform: translateY(-0px);
-}/* 1111111111111111111111 TOPO 1111111111111111111111111111111 */
+}
 <style>
 .slider {
   position: relative;
   max-width: 100%;
   overflow: hidden;
   border-radius: 20px;
-  }
+}
+
 .slides {
   display: flex;
   transition: transform 0.5s ease;
@@ -98,12 +102,14 @@ body {
 .slide {
   min-width: 100%;
 }
+
 .slide img {
   width: 100%;
   border-radius: 20px;
   height: 200px;
   object-fit: cover;
 }
+
 /* Botões */
 .prev, .next {
   position: absolute;
@@ -116,11 +122,14 @@ body {
   padding: 10px;
   cursor: pointer;
 }
+
 .prev { left: 10px; }
 .next { right: 10px; }
 </style>
 </head>
 <body>
+<header>
+</header>
 <div class="slider">
   <div class="slides" id="slides">
 
@@ -167,50 +176,60 @@ setInterval(() => {
   mudarSlide(1);
 }, 3000);
 </script>
-</b><div class="galeria"><b><div 
-class="galeria"><b>JOGOS DISPONÍVEL PARA BAIXAR</b>
-</div>
- <div class="galeria"><span face="Arial, sans-serif" style="font-size: 11pt; font-variant-east-asian: normal; font-variant-numeric: normal; text-align: center; vertical-align: baseline; white-space: pre-wrap;"><span style="border: none; display: inline-block; height: 144px; overflow: hidden; width: 87px;"><img height="144" src="https://blogger.googleusercontent.com/img/a/AVvXsEiWtzGLY4nuPfmBMJJxa6NbeDtPeqQF6k_YvqQpywDIF5Kbvhpp9bwz6vuQE1-o21bb6mI76ZWbKWZlHMT4mdY31iG_OzI7fS_ALQs4JNwhibzcD4O4FPp_XNp5pDvsEVBn4WsN-kpv6YPNoX2GjYLkfihiRl8MJDKbE7HSRIHzFcRJ6YKT8FdI6JWuhcg" style="margin-left: 0px; margin-top: 0px;" width="87" /></span><span face="Arial, sans-serif" style="font-size: 11pt; font-variant-east-asian: normal; font-variant-numeric: normal; text-align: center; vertical-align: baseline; white-space: pre-wrap;"><span style="border: none; display: inline-block; height: 144px; overflow: hidden; width: 87px;"><a href="https://cur.to/tudx"><img height="144" src="https://blogger.googleusercontent.com/img/a/AVvXsEjH3MUnmAC1Mn2sbthPF6AhsDMjrs-XBY-GfeBgAhjo3b18hit063qP1Uh7WLT51Wr-86y3zT4w1hEout7Tz9mGerEOUTgJ_5P1wJD7TNBEJCcX9fI6rX_l-jJUvu5hsLU0GPg9jLBdJa4q1vKm_OMHqv57vvz-6M_Y1y7T1PgQd3V_MMevcw1sOykvn6g" style="margin-left: 0px; margin-top: 0px;" width="87" /></a></span></span><span face="Arial, sans-serif" style="font-size: 11pt; font-variant-east-asian: normal; font-variant-numeric: normal; text-align: center; vertical-align: baseline; white-space: pre-wrap;"><span style="border: none; display: inline-block; height: 144px; overflow: hidden; width: 87px;"><img height="144" src="https://blogger.googleusercontent.com/img/a/AVvXsEiZno9wx9XWUL7_mxRtTzd8YG3e-mzEThrbBi-jmpmBK-DFvz5zDjJmoFc1YWe1dRpBl67AOd07VvKWz5-cpxSw-xUYwS62bTOGxoYBGxvPzIthaXjfG5uOCzBh2FRNaEjdeeGGsRAoKyCMOGfqxamJ1elVx7yTpYyWfTlAoMI_henLw8b7vCDJ31RnhjU" style="margin-left: 0px; margin-top: 0px;" width="87" /></span></span><span face="Arial, sans-serif" style="font-size: 11pt; font-variant-east-asian: normal; font-variant-numeric: normal; text-align: center; vertical-align: baseline; white-space: pre-wrap;"><span style="border: none; display: inline-block; height: 144px; overflow: hidden; width: 87px;"><img height="144" src="https://blogger.googleusercontent.com/img/a/AVvXsEh_tyxyPKoLbSfoA8ksOTkcpLsT1T3g7EcAfweXJuDDAz_8Ifa-6ByWNbCJaTavuh_SuHA6LmFaXG7XC6GRS9GN7DbhJH4y8cxSztlh_lyQ6ZEv-8Mr99R8kr22cXROuIzc_LtfMu9sdYSxhXOFN_fNtNK0f8VdEkcHYpYK8KS5oyp6-bhyZXjHmSxGJn8" style="margin-left: 0px; margin-top: 0px;" width="87" /></span></span></div><div class="separator" style="clear: both; text-align: center;"><h3><span id="docs-internal-guid-6d444c37-7fff-382c-bb34-df5e367ea4fc" style="font-weight: normal;"><div class="separator" style="clear: both; text-align: center;"><div class="separator" style="clear: both; text-align: center;"><div class="separator" style="clear: both; font-size: medium;"><div class="separator" style="clear: both; text-align: center;"><img alt="" data-original-height="768" data-original-width="1366" height="180" src="https://blogger.googleusercontent.com/img/a/AVvXsEhX3THRPocvhngEbRGxIA64G5cpRxqc3bx2wh95JU6fegsHeaoP7Ja4jsAxE0iPqEgnkG7IrsquNDIjDBx8TQXY3-EYxmes0bgu0VQjUPUDmLKd9x4H1t0MoOKi-vxzdflv06gPvKNR_88j0sDNq7OUqRWMnG0twFwELIY7zWbe9tQofTmULPhowDOELbY=w339-h180" width="339" /></div>PES2014 CAMERA DE PS5</div><div class="separator" style="clear: both; font-size: medium;"><object class="BLOG_video_class" contentid="a9826ed5480af9be" height="232" id="BLOG_video-a9826ed5480af9be" width="344"></object></div></div></div><div class="separator" style="clear: both; text-align: center;"><b><object class="BLOG_video_class" contentid="1325c0d79ba08818" height="245" id="BLOG_video-1325c0d79ba08818" width="348"></object></b></div></span></h3></div>
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+<footer>
+</footer>
+  <div class='app-menu'>
+  <a class='item active' href='https://ppsspponline8v.blogspot.com/p/inicial.html'>
+    <div class='box'>
+      <img class='icon-img' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeO2vGbZq-Ti5_r2L5_cvLLAH2r-tdIhOqhfcUYNNnnk5aJFUImrenX9dHWz7NC7zBzJP0rN52RZh07QhwKjBjed9VxYrXfiEp6BtbkZM69Slp6VPyMP2cemAV8eNVTiRXLWBJMK4Dxogzz9dWuO8hwQO1C2WIz4H8X2Jg_kqj_i1DrMDwqAnAjs7tOmo/s320/INICIO.jpg'/>
+    </div>
+    <span>INÍCIO</span>
+  </a>
+
+  <a class='item' href='https://rodrigo6br.github.io/PPSSPPONLINE/COPA'>
+    <div class='box'>
+      <img class='icon-img' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiowghmzBA31RR3bR9gSxg3CO9pv1AtbOjjYpwchFdbjZXWqb6WvbbXS2KxrFG-Wfws4TYHjOEbxF70x6tuvHinQmotFoYR1nyITTFsLvbpbxuiU6mqSll76u-c2Xb3u-A7tcGoLFigFIePvee3JhNHc580_HEfEUY1OtKZKYwoHCGZf9-MRE-LQVPudBw/s320/CAMPEONATO.jpg'/>
+    </div>
+    <span>COPA</span>
+  </a>
+
+  <a class='item' href='https://rodrigo6br.github.io/PPSSPPONLINE/COPA'>
+    <div class='box'>
+      <img class='icon-img' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTEnuETIvr4VfVIjUZCMVR6vN6z50mBJfCJY2A0puZ-iDBAAgK-VyxZHPjzRb5Ui6TkidtBlNnq6ssahJMF1JHJDERazlHfkjCcFyxsQWanQEYtI6_MvZKq7zUYhBfPozD7RHeje0KZgBXYWCvFVpSPR8DNjAZmSMVWxYh7WkKpsyL4jmSsK2Qkb7UibU/s320/RANKING.jpg'/>
+    </div>
+    <span>RANKING</span>
+  </a>
+
+  <a class='item' href='https://ppsspponlinv.blogspot.com/p/tutorial.html'>
+    <div class='box'>
+      <img class='icon-img' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhr8ov1ejUWmYsuoGTv4OBfp0HqUecHZpUHqSXZn9-gwGsdSMXbu9FriGKTW9OfdRjqhbN8oB3rdzl_S5FNYyUtajcc3gAnLP5J7taNXdgXZZCFmQg9BNZNd9uIUcM5RdJqg6NR2G_T-4vtopi1R9MByKCMdCfuhG7Rh3KyUP0zxQerCtdcn0mgH8TESbs/s320/TUTORIAL.jpg'/>
+    </div>
+    <span>TUTORIAL</span>
+  </a>
+
+  <a class='item' href='https://ppsspponlinv.blogspot.com/p/grupo.html'>
+    <div class='box'>
+      <img class='icon-img' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhW4HN0PSNDtE5Xgdr6zHiAFB0FUSC5dcSJmFi84v6XkK870Q74ghb6fKBMHU9dtTTtV-HlfS_-VmgA2mLv58i3eWXxYfgcpVK9EEjpLk6YmX3IoJPaM8aA8-mg9rNK8z5xgXuL-059f63qW640dN4HJLH6F30CF5VPY-03Q7MO2u_N3N-Yv5SEA_aKgbE/s320/GRUPO.jpg'/>
+    </div>
+    <span>GRUPO</span>
+  </a>
   
-  
------------------------------------------------- F-I-M -----------------------------------------
 <div class='top-banner'>
 <img src='https://i.ibb.co/1tNpWbX6/unnamed.png'/>
 </div>
-<b:template-script async='true' name='indie' version='1.0.0'/>
-<div class='app-menu'>
-<a class='item active' href='https://ppsspponline8v.blogspot.com/p/inicial.html'>
-<div class='box'>
-<img class='icon-img' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeO2vGbZq-Ti5_r2L5_cvLLAH2r-tdIhOqhfcUYNNnnk5aJFUImrenX9dHWz7NC7zBzJP0rN52RZh07QhwKjBjed9VxYrXfiEp6BtbkZM69Slp6VPyMP2cemAV8eNVTiRXLWBJMK4Dxogzz9dWuO8hwQO1C2WIz4H8X2Jg_kqj_i1DrMDwqAnAjs7tOmo/s320/INICIO.jpg'/>
 </div>
-<span>INÍCIO</span>
-</a>
-<a class='item' href='https://rodrigo96br.github.io/PPSSPPONLINE/COPA'>
-<div class='box'>
-<img class='icon-img' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiowghmzBA31RR3bR9gSxg3CO9pv1AtbOjjYpwchFdbjZXWqb6WvbbXS2KxrFG-Wfws4TYHjOEbxF70x6tuvHinQmotFoYR1nyITTFsLvbpbxuiU6mqSll76u-c2Xb3u-A7tcGoLFigFIePvee3JhNHc580_HEfEUY1OtKZKYwoHCGZf9-MRE-LQVPudBw/s320/CAMPEONATO.jpg'/>
-</div>
-<span>COPA</span>
-</a>
-<a class='item' href='https://ppsspponline8v.blogspot.com/p/ranking.html'>
-<div class='box'>
-<img class='icon-img' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTEnuETIvr4VfVIjUZCMVR6vN6z50mBJfCJY2A0puZ-iDBAAgK-VyxZHPjzRb5Ui6TkidtBlNnq6ssahJMF1JHJDERazlHfkjCcFyxsQWanQEYtI6_MvZKq7zUYhBfPozD7RHeje0KZgBXYWCvFVpSPR8DNjAZmSMVWxYh7WkKpsyL4jmSsK2Qkb7UibU/s320/RANKING.jpg'/>
-</div>
-<span>RANKING</span>
-</a>
-<a class='item' href='https://ppsspponline8v.blogspot.com/p/tutorial.html'>
-<div class='box'>
-<img class='icon-img' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhr8ov1ejUWmYsuoGTv4OBfp0HqUecHZpUHqSXZn9-gwGsdSMXbu9FriGKTW9OfdRjqhbN8oB3rdzl_S5FNYyUtajcc3gAnLP5J7taNXdgXZZCFmQg9BNZNd9uIUcM5RdJqg6NR2G_T-4vtopi1R9MByKCMdCfuhG7Rh3KyUP0zxQerCtdcn0mgH8TESbs/s320/TUTORIAL.jpg'/>
-</div>
-<span>TUTORIAL</span>
-</a>
-<a class='item' href='https://ppsspponline8v.blogspot.com/p/grupo.html'>
-<div class='box'>
-<img class='icon-img' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhW4HN0PSNDtE5Xgdr6zHiAFB0FUSC5dcSJmFi84v6XkK870Q74ghb6fKBMHU9dtTTtV-HlfS_-VmgA2mLv58i3eWXxYfgcpVK9EEjpLk6YmX3IoJPaM8aA8-mg9rNK8z5xgXuL-059f63qW640dN4HJLH6F30CF5VPY-03Q7MO2u_N3N-Yv5SEA_aKgbE/s320/GRUPO.jpg'/>
-</div>
-<span>GRUPO</span>
-</a>
-</div>
-
-</style>
 </body>
 </html>
